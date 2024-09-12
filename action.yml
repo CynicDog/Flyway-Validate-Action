@@ -1,0 +1,15 @@
+name: 'Flyway Validation Action'
+description: 'A GitHub Action to validate Flyway migrations.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  db_url:
+    description: 'Development database URL'
+    required: true
+  db_user:
+    description: 'Development database user'
+    required: true
+  db_password:
+    description: 'Development database password'
+    required: true
